@@ -1,0 +1,16 @@
+﻿.dizHref {
+    background-color: coral;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+   
+}
+.dizKhref {
+    background-color: gray;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: white;
+}
+
+.box {
+    width: 100vw;
+}

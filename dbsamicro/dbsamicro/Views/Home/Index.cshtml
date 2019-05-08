@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link type="text/css" rel="stylesheet" href="../../Content/StyleSite.css" />
+    <link type="text/css" rel="stylesheet" href="../../Content/StyleTwo.css" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="box">
+        <center>
+            <p class="dizHref"> Микроконтроллер</p>
+           
+        </center>
+
+    </div>
+    <div>
+       
+        <table>
+            <tr>
+                <td><p class="dizHref">name</p></td>
+                <td><p class="dizHref">price</p></td>
+                <td><p class="dizHref">seria</p>
+                </td>
+                <td></td>
+            </tr>
+            @foreach (var i in ViewBag.xD)
+            {
+        <tr>
+            <td><p class="dizKhref">@i.nameMicro </p></td>
+            <td><p class="dizKhref">@i.priceMicro</p></td>
+            <td><p class="dizKhref">@i.Seria</p></td>
+            <td><p><a href="/Home/Insert/@i.Id">Создать</a></p></td>
+            <td><p><a href="/Home/Edit/@i.Id">Изменить</a></p></td>
+            <td><p><a href="/Home/Delete/@i.Id">Удалить</a></p></td>
+            <td><p><a href="/Home/Informirovanie/@i.Id">Информирование</a></p></td>
+        </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

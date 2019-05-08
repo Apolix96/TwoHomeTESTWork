@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+@model dbsamicro.Models.Micro
+
+<h2>Удаление</h2>
+<dl>
+    <dt>Название</dt>
+    <dd>
+        @Html.DisplayFor(model => model.nameMicro)
+    </dd>
+
+    <dt>Цена</dt>
+    <dd>
+        @Html.DisplayFor(model => model.priceMicro);
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Удалить" />
+}

@@ -1,0 +1,31 @@
+﻿
+
+@model dbsamicro.Models.Micro
+
+@{
+    Layout = null;
+}
+
+
+<h2>Новый микроконтроллер</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(model => model.nameMicro, "Название микроконтроллера")
+    <br />
+    @Html.EditorFor(model => model.nameMicro)
+    @Html.ValidationMessageFor(model => model.nameMicro);
+    <br /><br />
+    @Html.LabelFor(model => model.priceMicro, "Цена")
+    <br />
+    @Html.EditorFor(model => model.priceMicro)
+    <br /><br />
+    @Html.LabelFor(model => model.Seria, "Серия")
+    <br />
+    @Html.EditorFor(model => model.Seria)
+
+    <br /><br />
+
+
+    <input type="submit" value="Добавить" />
+}
